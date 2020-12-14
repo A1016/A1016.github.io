@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Alien.</title>
+    <link rel="icon" href = "ico.ico" type = "image/icon type">
+</head>
+<style>
+
+   .navbar ul{
+        list-style-type: none;
+        padding: 1%;
+        margin: 5%;
+    }
+
+
+    li a {
+        padding: 14px 25px;
+        border-style: solid;
+        border-radius: 6%;
+        margin-top: -78px;
+    }
+
+    li a:hover{
+        background-color: #e6e6ff;
+        padding: 14px 25px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        float: right;
+    }
+
+    h1{
+        font-family: monospace;
+        font-size: 265%;
+    }
+
+    h4{
+        font-family: monospace;
+        font-size: 194%;
+        text-align: center;
+    }
+    
+    h6{
+        font-family: monospace;
+        font-size: 148%;
+        text-align: left;
+        margin-left: 15%;
+    }
+
+    p{
+        text-align: left;
+        margin-left: 15%; 
+        margin-right: 17%;
+        font-family: monospace;
+        text-align: justify;
+    }
+
+    hr{
+        opacity: 0.2;
+    }
+
+    h5{
+        font-family: monospace;
+    }
+
+   .PAM {
+       list-style-type: disc;
+       margin-left: 10%;
+       font-family: monospace;
+   }
+
+   .PAM h5{
+        font-style: italic;
+        font-size: 148%;
+        margin-left: 1%;
+   }
+   .PWM {
+       list-style-type: disc;
+       margin-left: 10%;
+       font-family: monospace;
+   }
+
+   .PPM {
+       list-style-type: disc;
+       margin-left: 10%;
+       font-family: monospace;
+   }
+   
+
+   .PWM h5{
+        font-style: italic;
+        font-size: 148%;
+        margin-left: 1%;
+   }
+   
+   .PPM h5{
+        font-style: italic;
+        font-size: 148%;
+        margin-left: 1%;
+   }
+
+   .PCM h6{
+        
+        font-size: 148%;
+        margin-left: 10%;
+   }
+
+   .pppm{
+       width: 50%;
+       height: auto;
+   }
+   .ppp{
+       width: 70%;
+       height: auto;
+   }
+
+   h3{
+       float: right;
+       margin-right: 5%;
+       font-size: small;
+       font-family: monospace;
+   }
+
+   video{
+        max-width: 80%;
+        height: auto;
+   }
+
+</style>
+<body>
+
+    <div class = "navbar">
+        <ul>
+            
+            <h1 onclick="history.go(0)">A<sup>sk</sup><sub>Aliens</sub><img src ="cc.png" width="5%" height="5%"></h1>
+            
+            <li><a href = "emh.htm">About us</a></li>
+        </ul>   
+    </div>
+
+    <div>
+        <h4>#What is Radio Wave Propagation?</h4>
+        <center><img src ="prop.gif" class = "ppp"></center>
+        <p>&nbsp&nbsp&nbspRadio propagation is the way radio waves travel or propagate when they are transmitted from one point to another and affected by the medium in which they travel and in particular the way they propagate around the Earth in various parts of the atmosphere.</p>
+
+        <p>&nbsp&nbsp&nbspIn realistic situations, the radio wave propagation is affected by reflections from the earth, scattering by particles, diffraction over hills, and bending due to atmospheric refractivity. The study of propagation has led to models that can be used to predict the field strength and or power density expected at a specific receiver location of a radio wave radiated from a distance transmitter location.</p>
+
+        <br><br>
+        <center><video controls>
+            <source src = "PAM.mp4" type="video/mp4">
+        </video></center>
+        <br><br><hr><br>
+        <h6>Antenna type</h6>
+        <div class = "ant">
+            <p>&nbsp&nbsp&nbspAntennas have an arrangement of metallic conductors with an electrical connection to receivers or transmitters. Current is forced through these conductors by radio transmitters to create alternating magnetic fields.</p>
+            <center><video controls>
+                <source src = "PA2.mp4" type="video/mp4">
+            </video></center>
+            <br>
+            <p>&nbsp&nbsp&nbspThese fields induce voltage at the antenna terminals, which are connected to the receiver input. In the far field, the oscillating magnetic field is coupled with a similar oscillating electric field, which defines electromagnetic waves capable of propagating the signal for long distances.</p>
+        </div>
+        <br><br><br><hr><br><br>
+        <h6>Pulse Modulation</h6>
+        <p>&nbsp&nbsp&nbspThe process of changing a binary pulse signal to represent the information to be transmitted. It consist of sampling analog information signals and then converting those samples into discrete pulses and transporting the pulses from a sources to a destination over a physical transmission medium.</p><p>There are four predominant methods of pulse modulation such as pulse-amplitude modulation (PAM), pulse-width modulation (PWM), pulse-position modulation (PPM), and pulse-code modulation (PCM).</p>
+        <br><center><h5>Comparing Pulse-Modulation Methods</h5></center>
+        <center><img src ="PAM.png" class= "pppm"></center> 
+        <div class = "PAM">
+            <h5>Pulse-amplitude Modulation</h5>
+        <ul>
+            <li>This is the simpliest form of pulse modulation.</li>
+            <li>Sampled at regular intervals, and each sample is made proportional to the amplitude of the signal at the instant of sampling.</li>
+            <li>Pulses are sent by wire or a cable, or else are used to modulate a carrier.</li>
+            <li>Bandwidth required for the transmision is very large in comparison to the maximum frequency present in the modulating signal.</li>
+            <li>Interference of noise is maximum in a PAM  signal because of its pulse amplitude.</li>
+        </ul>
+    </div><br><br><hr><br>
+    <center><img src ="PWM.png" class="pppm"></center> 
+    <div class = "PWM">
+        <h5>Pulse-width Modulation</h5>
+    <ul>
+        <li>Fixed amplitude and starting time to each pulse.</li>
+        <li>Width of each pulse is made proportional to the amplitude of the signal at that instant.</li>
+        <li>Less noise compared to PAM because of its constant amplitude.</li>
+        <li>Does not require synchronization between transmitter and receiver.</li>
+        <li>Requires larger bandwidth compared to PAM.</li>
+    </ul>
+    </div><br><br><hr><br>
+    <center><img src ="PPM.png" class="pppm"></center> 
+    <div class = "PPM">
+        <h5>Pulse-position Modulation</h5>
+    <ul>
+        <li>Amplitude and width of the pulses is kept constant in this system.</li>
+        <li>Transmission power of each pulse is same because of its constant pulse widths and amplitudes.</li>
+        <li>Position of each pulse, in relation to the position of a recurrent reference pulse is varied by each instantaneous sampled value of the modulationg wave.</li>
+        <li>Transmitter must send synchronizing pulses to operate timing circuits in the receiver.</li>
+        <li>Pulse-position modulation may be obtained from PWM.</li>
+    </ul>
+</div><br><br><hr><br>
+    <div class ="PCM">
+        <h6>Pulse-Code Modulation</h6>
+        <center><video controls>
+            <source src = "PCM.mp4" type="video/mp4">
+        </video></center><br><br>
+    </div><hr><br><h3>Publish Date: 12/14/2020</h3><br> 
+    <br>
+
+    </div>
+
+    
+   
+</body>
+</html>
